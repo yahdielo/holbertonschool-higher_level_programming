@@ -7,10 +7,12 @@ def uppercase(str):
         character = ord(i)
         
         if character >= 97 and character <= 122:
-            character = character - 32;
-
+            character = character - 32
             char = chr(character)
 
-            print("{}".format(char), end="")
-
+        else:
+            char = chr(character)
+        print("{}".format(char), end="")
+    
     print("")
+
