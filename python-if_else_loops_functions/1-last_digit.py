@@ -23,4 +23,3 @@ else:
 
     elif last_digit < "6" and last_digit > "0":
         print(f"Last digit of {number} is {last_digit} {less_zero}")
-
