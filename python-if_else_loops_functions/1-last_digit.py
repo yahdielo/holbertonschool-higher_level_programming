@@ -8,7 +8,7 @@ last_digit = num_str[-1]
 
 if number < 0:
     sign = "-"
-    print(f"Last digit if {number} is {sign}{last_digit} and is less than 6 and not 0")
+    print(f"Last digit of {number} is {sign}{last_digit} and is less than 6 and not 0")
 else:
 
     if last_digit == "0":
