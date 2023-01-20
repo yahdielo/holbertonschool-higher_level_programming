@@ -9,8 +9,3 @@ def print_last_digit(number):
     else:
         last_digit =  number % 10
     print("{}".format(last_digit), end="")
-
-print_last_digit(98)
-print_last_digit(0)
-r = print_last_digit(-1024)
-print(r)
