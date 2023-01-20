@@ -3,8 +3,8 @@
 
 def pow(a, b):
 
-    for i in  "b":
-        
+    for i in "b":
+
         if a < 0:
             power = a * a
         elif b == 0:
