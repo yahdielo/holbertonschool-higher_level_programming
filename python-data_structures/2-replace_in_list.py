@@ -4,7 +4,7 @@
 def replace_in_list(my_list, idx, element):
 
     if idx < 0:
-        return mylist
+        return my_list
 
     lenght = len(my_list) - 1
 
