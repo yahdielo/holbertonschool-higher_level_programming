@@ -3,6 +3,9 @@
 
 def print_reversed_list_integer(my_list=[]):
 
+    if my_list == None:
+        return None
+
     list.reverse(my_list)
     
     for i in my_list:
