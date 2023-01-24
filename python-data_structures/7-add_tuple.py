@@ -11,7 +11,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     for i in range(lenght_a):
         if lenght_a > lenght_b:
             diference_lenght = lenght_a - lenght_b
-            lenght1 = lenght1 - diference_lenght
+            lenght_a = lenght_a - diference_lenght
             res.append(tuple_a[i] + tuple_b[i])
         if lenght_a < lenght_b:
             deference_lenght = lenght_b - lenght_a
