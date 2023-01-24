@@ -3,9 +3,10 @@
 
 def divisible_by_2(my_list=[]):
 
+    lenght = len(my_list)
     new_list = list()
 
-    for i in len(my_list):
+    for i in "lenght":
 
         if i % 2 == 0:
             new_list.append(True)
