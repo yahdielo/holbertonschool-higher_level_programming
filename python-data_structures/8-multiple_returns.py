@@ -6,7 +6,7 @@ def multiple_returns(sentence):
 
     if sentence is None:
         sentence[0] = None 
-        _tuple = (count, None)
+        _tuple = (count, sentence[0])
         return _tuple
     else:
         for i in  sentence:
