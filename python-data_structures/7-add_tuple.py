@@ -6,7 +6,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     res = []
 
     lenght1 = len(tuple_a)
-    length2 = len(tuple_b)
+    lenght2 = len(tuple_b)
 
     for i in range(lenght1):
         if lenght1 < lenght2:
