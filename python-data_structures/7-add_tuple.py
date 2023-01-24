@@ -26,7 +26,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
             new_tuple_a.append(0)
             tuple_b = tuple(new_tuple_b)
             tuple_a = tuple(new_tuple_a)
-            re.append(tuple_a[i] + tuple_b[i])
+            res.append(tuple_a[i] + tuple_b[i])
         else:
             res.append(tuple_a[i] + tuple_b[i])
     res = tuple(res)
