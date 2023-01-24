@@ -9,7 +9,15 @@ def add_tuple(tuple_a=(), tuple_b=()):
     lenght_b = len(tuple_b)
     #diference_of_lenght = 0
     for i in range(2):
-        if lenght_b < 2:
+        if lenght_a  < 2 and lenght_b < 2:
+            new_tuple_b = list(tuple_b)
+            new_tuple_a = list(tuple_a)
+            new_tuple_b.append(0)
+            new_tuple_a.append(0)
+            tuple_b = tuple(new_tuple_b)
+            tuple_a = tuple(new_tuple_a)
+            res.append(tuple_a[i] + tuple_b[i])
+        elif lenght_b < 2:
             new_tuple_b = list(tuple_b)
             new_tuple_b.append(0)
             tuple_b = tuple(new_tuple_b)
@@ -17,14 +25,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
         elif lenght_a < 2:
             new_tuple_a = list(tuple_a)
             new_tuple_a.append(0)
-            tuple_a = tuple(new_tuple_a)
-            res.append(tuple_a[i] + tuple_b[i])
-        elif lenght_a  < 2 and lenght_b < 2:
-            new_tuple_b = list(tuple_b)
-            new_tuple_a = list(tuple_a)
-            new_tuple_b.append(0)
-            new_tuple_a.append(0)
-            tuple_b = tuple(new_tuple_b)
             tuple_a = tuple(new_tuple_a)
             res.append(tuple_a[i] + tuple_b[i])
         else:
