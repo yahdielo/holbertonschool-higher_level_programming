@@ -5,11 +5,13 @@ def multiple_returns(sentence):
     count = 0
 
     if sentence is None:
-        return None
+        _tuple = (count, None)
+        return _tuple
 
-    for i in  sentence:
-        count += 1
+    else:
+        for i in  sentence:
+            count += 1
 
-    _tuple = (count, sentence[0])
+        _tuple = (count, sentence[0])
 
     return _tuple
