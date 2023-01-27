@@ -27,7 +27,7 @@ def roman_to_int(roman_string):
         for i in reverse_numbers:
             reverse_list.append(roman_numbers.get(i))
 
-        for i in reverse_list: 
+        for i in reverse_list:
             if i < _numberold:
                 number_sum -= i
             else:
