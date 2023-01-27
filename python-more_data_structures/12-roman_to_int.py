@@ -10,7 +10,7 @@ def roman_to_int(roman_string):
     reverse_list = []
     _numberold = 0
 
-    if isinstance(roman_string, str) is False or roman_string is None:
+    if roman_string is None:
         return 0
 
     if len(roman_string) == 1:
