@@ -9,3 +9,4 @@ def safe_print_integer(value):
     except:
         return False
         print("{} is not an integer".format(value))
+        
