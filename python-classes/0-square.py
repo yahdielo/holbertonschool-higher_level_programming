@@ -5,5 +5,4 @@ class Square:
 
     pass
 
-obj = Square()
-print(obj)
+print(Square)
