@@ -1,13 +1,16 @@
 #!/usr/bin/python3
-"""this module write a class Square that defines 
-a square by: (based on 2-square.py)"""
+"""This module provides a Class
+that defines a square"""
 
 
 class Square:
-    """class square has to be an int area(self) 
-    returns the current square area"""
+   """Defines a square of a particular size
+    Attributes:
+        size (int): size of the square (private)
+    Methods:
+    __init__: initialize specific square
+    size attribute instance"""
     def __init__(self, size=0):
-         """class square has to be an int area(self) returns the current square area"""
          if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
