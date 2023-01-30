@@ -5,7 +5,7 @@
 class Square:
 
     def __init__(self, size=0):
-        """ Return area of a square to know full"""
+         """ class square has to be an int area(self) returns the current square area"""
 
 
         if type(size) != int:
