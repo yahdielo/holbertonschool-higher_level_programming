@@ -6,6 +6,8 @@ class Square:
 
     def __init__(self, size=0):
         """ Return area of a square to know full"""
+
+
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
