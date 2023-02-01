@@ -1,24 +1,25 @@
-The ``add_integer`` module
+The ``add_integer`` doctest
 ======================
-
-Using ``add_integer``
--------------------
-
 This is an example text file in reStructuredText format.  First import
-``factorial`` from the ``test`` module:
+``add_integer`` :
 
->>>add_integer = __import__('0-add_integer').add_integer
+>>> add_integer = __import__('0-add_integer').add_integer
 
-execute test:
-
->>>add_integer(10, 10)
+>>> add_integer(10, 10)
 20
 
->>>add_integer(10.5 , -1)
+>>> add_integer(10.3 , -1)
 9
 
->>>add_integer("hey", 10)
+>> add_integer(-10, -10)
+-20
+
+>>> add_integer("hey", 10)
+Traceback (most recent call last):
+...
 a must be an integer
 
->>>add_integer(5, "brr")
+>>> add_integer(5, "brr")
+Traceback (most recent call last):
+...
 b must be an integer
