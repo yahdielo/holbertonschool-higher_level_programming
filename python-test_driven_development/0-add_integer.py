@@ -8,7 +8,7 @@ def add_integer(a=10, b=98):
     """Fucntion that adds two integers
     a (int): fisrt value
     b (int): second value"""
-    if type(a) == float and type(b) == float:
+    if type(a) == float or type(b) == float:
         a = int(a)
         b = int(b)
     elif type(a) != int:
