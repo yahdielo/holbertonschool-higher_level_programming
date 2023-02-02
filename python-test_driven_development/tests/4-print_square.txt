@@ -31,6 +31,9 @@ Traceback (most recent call last):
 ...
 TypeError: size must be a integer
 
+>>> print_square(0)
+
+
 >>> print_square("hello")
 Traceback (most recent call last):
 ...
