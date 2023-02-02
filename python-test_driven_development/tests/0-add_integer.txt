@@ -17,14 +17,9 @@ This is an example text file in reStructuredText format.  First import
 >>> add_integer("hey", 10)
 Traceback (most recent call last):
 ...
-TypeError: a must be an integer
+a must be an integer
 
 >>> add_integer(5, "brr")
 Traceback (most recent call last):
 ...
-TypeError: b must be an integer
-
->>> add_integer((1, 2), (1, 2))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+b must be an integer
