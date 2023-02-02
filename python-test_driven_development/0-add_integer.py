@@ -1,4 +1,4 @@
-pycode#!/usr/bin/python3
+#!/usr/bin/python3
 """ This module supplys add_integer function,
 if value if float, it will be cast to integer and added,
 if value are not int, type error will execute"""
