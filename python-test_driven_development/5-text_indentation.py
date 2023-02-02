@@ -11,16 +11,10 @@ def text_indentation(text):
     if type(text) != str:
         raise TypeError("text must be a string")
 
-    idx = 0
     for i in text:
-        idx += 1
         if i == "." or i == "?" or i == ":":
             print(f"{i}", end="")
             print("")
             print("")
         else:
             print(f"{i}", end="")
-            if idx == 608:
-                print("")
-            #print(f"{idx}")
-
