@@ -7,8 +7,6 @@ def matrix_divided(matrix, div):
     num = 0
     idx = 0
 
-    print(f"{len(matrix[0])}")
-    print(f"{len(matrix[1])}")
     if len(matrix[0]) != len(matrix[1]):
         raise TypeError("Each row of the matrix must be the same size")
 
