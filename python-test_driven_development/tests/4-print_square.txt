@@ -28,12 +28,12 @@ TypeError: print_square() missing 1 required positional argument: 'size'
 >>> print_square(None)
 Traceback (most recent call last):
 ...
-TypeError: size must be a integer
+TypeError: size must be an integer
 
 >>> print_square(1.2)
 Traceback (most recent call last):
 ...
-TypeError: size must be a integer
+TypeError: size must be an integer
 
 >>> print_square(0)
 
@@ -41,4 +41,4 @@ TypeError: size must be a integer
 >>> print_square("hello")
 Traceback (most recent call last):
 ...
-TypeError: size must be a integer
+TypeError: size must be an integer
