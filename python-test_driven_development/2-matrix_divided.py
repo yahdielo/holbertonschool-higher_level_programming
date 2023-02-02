@@ -1,7 +1,8 @@
  #!/usr/bin/python3
-"""This module provides a fucntion to divide matrix in and store divided vaalues in
- a lists of lists, matrix has to be a a lists of lists, and divisor number 
- can't be zero or a string"""
+""" This module provides a fucntion to divide matrix, 
+and store divided values in a lists of lists, 
+matrix has to be a a lists of lists, and divisor number 
+can't be zero or a string"""
 
 
 def matrix_divided(matrix, div):
