@@ -6,6 +6,17 @@ in a list of lists wiwh is ``matrix_divided``:
 
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+...
+matrix must be a matrix (list of list) of integers/floats
+
+matrix = [[1, 2, 3, 4], [1, 2, 3]]
+>>> matrix_divided(matrix,)
+Traceback (most recent call last):
+...
+div must be a nuumber
+
 matrix = [[1, 2, 3, 4], [1, 2, 3]]
 >>> matrix_divided(matrix, 2)
 Traceback (most recent call last):
