@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module prints a square with area of size*size"""
 
+
 def print_square(size):
     """This fucntion prints a perfect square with area size*size
     size (int) else exeption will be raise"""
