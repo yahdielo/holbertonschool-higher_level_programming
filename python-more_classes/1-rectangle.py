@@ -3,8 +3,8 @@
 
 
 class Rectangle:
+    """This fucntion defines a rectangle"""
     def __init__(self, width=0, height=0):
-        """This fucntion defines a rectangle"""
         if type(width) != int:
             raise TypeError("width must be an integer")
         elif width < 0:
