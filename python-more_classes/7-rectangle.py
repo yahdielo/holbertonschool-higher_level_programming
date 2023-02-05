@@ -62,7 +62,7 @@ class Rectangle:
                 if i != 0:
                     _str += "\n"
                 for j in range(self.__width):
-                    _str += Rectangle.print_symbol
+                    _str += str(self.print_symbol)
         return _str
 
     def __repr__(self):
