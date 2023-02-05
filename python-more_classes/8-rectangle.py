@@ -84,7 +84,6 @@ class Rectangle:
         else:
             return rect_1
 
-
     def __del__(self):
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
