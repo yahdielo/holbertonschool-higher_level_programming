@@ -7,12 +7,7 @@ content of the list
 
 
 class Mylist(list):
-    """
-    Class that inherits list
-    as a parent class and has a 
-    method that can sort the list
-    and retuns it
-    """
+    """Class that inherits list as a parent and sort the list and retuns it"""
     def print_sorted(self):
         new_list = list(list)
         for i in new_list:
