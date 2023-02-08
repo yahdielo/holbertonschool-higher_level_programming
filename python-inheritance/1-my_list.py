@@ -14,8 +14,6 @@ class Mylist(list):
     and retuns it
     """
     def print_sorted(self):
-        """this function 
-        sort a list"""
         new_list = list(list)
         for i in new_list:
             self.new_list.sort()
