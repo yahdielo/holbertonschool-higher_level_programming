@@ -10,4 +10,3 @@ class MyList(list):
             new_list.append(i)
         new_list.sort()
         print(new_list)
-
