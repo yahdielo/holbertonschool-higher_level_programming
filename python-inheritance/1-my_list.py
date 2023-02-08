@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""This module  inherits a list and then sorts it"""
+"""This module provide a new class called MyList"""
 
 
-class Mylist(list):
+class MyList(list):
     """Defines a new class MyList that inherits from list"""
     def print_sorted(self):
         new_list = list(list)
