@@ -8,9 +8,9 @@ content of the list
 
 class Mylist(list):
     """
-    this class Mylist inherits a list 
-    and then creat a new one with 
-    the numbers sorted
+    Class that inherits list
+    as a parent class and has a 
+    method that can sort the list
     """
     def print_sorted(self):
         """this function 
