@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-"""
-this module  inherits a list 
-and then sorts the sorts the 
-content of the list
-"""
+"""This module  inherits a list and then sorts it"""
 
 
 class Mylist(list):
-    """Class that inherits list as a parent, creat a new list a sorts it"""
+    """Defines a new class MyList that inherits from list"""
     def print_sorted(self):
         new_list = list(list)
         self.new_list.sort()
