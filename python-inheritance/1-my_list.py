@@ -10,6 +10,5 @@ class Mylist(list):
     """Class that inherits list as a parent and sort the list and retuns it"""
     def print_sorted(self):
         new_list = list(list)
-        for i in new_list:
-            self.new_list.sort()
+        self.new_list.sort()
         return new_list
