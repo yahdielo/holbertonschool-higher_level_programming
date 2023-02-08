@@ -3,8 +3,7 @@
 
 
 class Mylist(list):
-    """this class  inherits a list and then sorts the sorts the content of the list"""
-
+    """this clas inherits a list and then crwat a new one with the numbers sorted"""
 
     def print_sorted(self):
         new_list = list(list)
