@@ -6,7 +6,8 @@ class MyList(list):
     """Defines a new class MyList that inherits from list"""
     def print_sorted(self):
         new_list = []
-        for i in list:
+        for i in self:
             new_list.append(i)
-        return new_list.sort()
+        new_list.sort()
+        print(new_list)
 
