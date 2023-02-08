@@ -11,6 +11,7 @@ class Mylist(list):
     Class that inherits list
     as a parent class and has a 
     method that can sort the list
+    and retuns it
     """
     def print_sorted(self):
         """this function 
