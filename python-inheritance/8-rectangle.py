@@ -7,5 +7,5 @@ class Rectangle:
     def __init__(self, width, height):
         self.integer_validator(width)
         self.integer_validator(height)
-        self.width = width
-        self.height = height 
+        self.__width = width
+        self.__height = height 
