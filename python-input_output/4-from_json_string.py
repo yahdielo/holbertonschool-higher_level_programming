@@ -6,4 +6,4 @@ import json
 
 def from_json_string(my_string):
     """comment"""
-    return json.load(my_string)
+    return json.loads(my_string)
