@@ -14,5 +14,5 @@ with open(filename, "a+", encoding="utf-8") as f:
     my_list = []
     for i in len(arguments):
         my_list.append(arguments[i])
-        save_to_json_file(my_list, filename)
-        load_from_json_file(filename)
+    save_to_json_file(my_list, filename)
+    load_from_json_file(filename)
