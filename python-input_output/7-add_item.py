@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""comment"""
+"""odule is documented"""
 import json
 import sys
 
