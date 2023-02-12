@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """comment"""
-import json
 import sys
 
 
@@ -9,10 +8,12 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 arguments = sys.argv
 filename = 'add_item.json'
-
-
 my_list = []
-for i in arguments:
-    my_list.append(i)
-    save_to_json_file(my_list, filename)
-    load_from_json_file(filename)
+
+try:
+    my_list = load_from_json_file(filename)
+except:
+    pass
+for i in range(1, len(arguments)):
+    my_list.append(arguments[i])
+save_to_json_file(my_list, filename)
