@@ -9,6 +9,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 arguments = sys.argv
 filename = 'add_items.json'
 
+"""module is documented"""
 with open(filename, "a+", encoding="utf-8") as f:
     """append arguments to a list"""
     my_list = []
