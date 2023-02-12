@@ -10,9 +10,10 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 arguments = sys.argv
 filename = 'add_items.json'
 
-
-my_list = []
-for i in arguments:
+try:
+    laod_obj = load_from_json_file(filename)
+except:
+    my_list = []
+for i in arguments[1:]:
     my_list.append(i)
-    save_to_json_file(my_list, filename)
-    load_from_json_file(filename)
+save_to_json_file(my_list, filename)
