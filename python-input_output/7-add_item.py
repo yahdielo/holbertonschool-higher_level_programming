@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """comment"""
-import json
 import sys
 
 
@@ -15,6 +14,6 @@ try:
     my_list = load_from_json_file(filename)
 except:
     pass
-for i in range(1,len(arguments)):
+for i in range(1, len(arguments)):
     my_list.append(arguments[i])
 save_to_json_file(my_list, filename)
