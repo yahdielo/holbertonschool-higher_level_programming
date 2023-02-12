@@ -12,9 +12,9 @@ filename = 'add_items.json'
 my_list = []
 
 try:
-    laod_obj = load_from_json_file(filename)
+    my_list = load_from_json_file(filename)
 except:
     pass
-for i in arguments[1:]:
-    my_list.append(i)
+for i in range(1,len(arguments)):
+    my_list.append(arguments[i])
 save_to_json_file(my_list, filename)
