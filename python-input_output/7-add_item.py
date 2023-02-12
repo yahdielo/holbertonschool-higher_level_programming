@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Script: Adds all arguments to a Python list,
-and then saves them to a file
+THis module reads argumends and appends them to a list
+in json format
 """
 import sys
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
