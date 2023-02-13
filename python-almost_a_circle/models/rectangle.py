@@ -37,6 +37,13 @@ class Rectangle(Base):
         """this module creturns the area of a rectangle"""
         return self.__width * self.__height
 
+    def display(self):
+        """this fucntions prints the rectangle"""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+            print("")
+
     @property
     def width(self):
         return self.__width
