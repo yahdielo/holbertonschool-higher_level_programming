@@ -32,9 +32,10 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-    
+
     def __str__(self):
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        var = "[Rectangle]"
+        return (f"{var} ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
 
     def area(self):
         """this module creturns the area of a rectangle"""
