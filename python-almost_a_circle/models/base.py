@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This module if id is not None, assign the public instance attribute id
+with this argument value
+ - you can assume id is an integer and you don’t need to test 
+ the type of it
+ """
 
 
 class Base:
