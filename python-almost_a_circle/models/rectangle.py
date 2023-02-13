@@ -34,6 +34,7 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """this module creturns the area of a rectangle"""
         return self.__width * self.__height
 
     @property
