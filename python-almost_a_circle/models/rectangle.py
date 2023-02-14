@@ -33,6 +33,29 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+    def update(self, *args):
+        lenght = len(args) - 1
+        if lenght == 0:
+            self.__id = args[0]
+        elif lenght == 1:
+            self.id = args[0]
+            self.__width = args[1]
+        elif lenght == 2:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+        elif lenght == 3:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+        elif lenght >= 0 and lenght < 5:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
+
     def __str__(self):
         var = "[Rectangle]"
         var1 = (f"({self.id}) {self.__x}/{self.__y}")
