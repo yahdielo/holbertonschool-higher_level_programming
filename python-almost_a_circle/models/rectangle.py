@@ -37,7 +37,7 @@ class Rectangle(Base):
         """This methods allows user to update class methods with args"""
         lenght = len(args) - 1
         if lenght == 0:
-            self.__id = args[0]
+            self.id = args[0]
         elif lenght == 1:
             self.id = args[0]
             self.__width = args[1]
