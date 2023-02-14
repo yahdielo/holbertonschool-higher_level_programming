@@ -34,6 +34,7 @@ class Rectangle(Base):
         self.__y = y
 
     def update(self, *args):
+        """This methods allows user to update class methods with args"""
         lenght = len(args) - 1
         if lenght == 0:
             self.__id = args[0]
