@@ -45,12 +45,11 @@ class Rectangle(Base):
     def display(self):
         """this fucntions prints the rectangle"""
 
-        for k in range(self.__x):
-            for q in range(self.__y):
-                print(" ", end="")
-            if self.__y != 0:
-                print()
+        for q in range(self.__y):
+            print("")
         for i in range(self.__height):
+            for q in range(self.__x):
+                print(" ", end="")
             for j in range(self.__width):
                 print("#", end="")
             print("")
