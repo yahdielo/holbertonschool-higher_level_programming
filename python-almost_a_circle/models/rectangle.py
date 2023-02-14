@@ -52,7 +52,7 @@ class Rectangle(Base):
                 print()
         for i in range(self.__height):
             for j in range(self.__width):
-                if i == 0:
+                if j == 0:
                     if self.__x == 0:
                         print(" " * self.__y, end="")
                     else:
