@@ -48,7 +48,8 @@ class Rectangle(Base):
         for k in range(self.__x):
             for q in range(self.__y):
                 print(" ", end="")
-            print()
+            if self.__y != 0:
+                print()
         for i in range(self.__height):
             for j in range(self.__width):
                 if j == 0:
