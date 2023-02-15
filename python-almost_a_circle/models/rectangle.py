@@ -50,15 +50,15 @@ class Rectangle(Base):
         else:
             for i in len(kwargs):
                 if i == 0:
-                    self.id = Rectangle.get("id")
+                    self.id = kwargs[i]
                 if i == 1:
-                    self.__width = Rectangle.get("width")
+                    self.__width = kwargs[i]
                 if i == 2:
-                    self.__height = Rectangle.get("height")
+                    self.__height = kwargs[i]
                 if i == 3:
-                    self.__x = Rectangle.get("x")
+                    self.__x = kwargs[i]
                 if i == 4:
-                    self.__y = Rectangle.get("y")
+                    self.__y = kwargs[i]
 
     def __str__(self):
         var = "[Rectangle]"
