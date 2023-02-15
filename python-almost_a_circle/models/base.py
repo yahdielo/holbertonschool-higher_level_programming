@@ -21,6 +21,7 @@ class Base:
         else:
             self.id = id
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """comment"""
         if list_dictionaries is None:
