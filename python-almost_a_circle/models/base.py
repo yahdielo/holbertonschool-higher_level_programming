@@ -5,7 +5,7 @@ with this argument value
  - you can assume id is an integer and you don’t need to test
 the type of it
  """
- import json
+import json
 
 
 class Base:
