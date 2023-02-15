@@ -47,18 +47,18 @@ class Rectangle(Base):
                     self.__x = args[3]
                 if lenght == 4:
                     self.__y = args[4]
-        else:
-            for i in len(kwargs):
-                if i == 0:
-                    self.id = kwargs[i]
-                if i == 1:
-                    self.__width = kwargs[i]
-                if i == 2:
-                    self.__height = kwargs[i]
-                if i == 3:
-                    self.__x = kwargs[i]
-                if i == 4:
-                    self.__y = kwargs[i]
+
+        for i in len(kwargs):
+            if i == 0:
+                self.id = kwargs[i]
+            if i == 1:
+                self.__width = kwargs[i]
+            if i == 2:
+                self.__height = kwargs[i]
+            if i == 3:
+                self.__x = kwargs[i]
+            if i == 4:
+                self.__y = kwargs[i]
 
     def __str__(self):
         var = "[Rectangle]"
