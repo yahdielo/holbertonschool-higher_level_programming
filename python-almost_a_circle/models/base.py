@@ -39,7 +39,9 @@ class Base:
                 for i in list_objs:
                     new_list.append(i.to_dictionary())
             f.write(cls.to_json_string(new_list))
-    
+
     def from_json_string(json_string):
         """loads module converts from json to dictionery"""
+        if json_string is None:
+            json_string = []
         return json.loads(json_string)
