@@ -33,9 +33,8 @@ class Base:
         """comment"""
         i
         filename = f"{cls.__name__}.json"
-        with open(filename, "w") as f:
+        with open(filename, "w") as f:                
             new_list = []
-            if list_objs:
-                for i in list_objs:
-                    new_list.append(i.to_dictionary())
+            for i in list_objs:
+                new_list.append(i.to_dictionary())
             f.write(cls.to_json_string(new_list))
