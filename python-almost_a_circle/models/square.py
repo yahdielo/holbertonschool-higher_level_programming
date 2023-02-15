@@ -25,3 +25,24 @@ class Square(Rectangle):
         var = "[Square]"
         var1 = (f"({self.id}) {self.x}/{self.y}")
         return (f"{var} {var1} - {self.width}")
+
+    def update(self, *args, **kwargs):
+        if args:
+            for i in range(len(args)):
+                if i == 0:
+                    self.id = args[i]
+                if i == 1:
+                    self.size = args[i]
+                if i == 2:
+                    self.x = args[i]
+                if i == 3:
+                    self.y = args[i]
+        for i in kwargs:
+            if i == "id":
+                self.id = kwargs.get("id")
+            if i == "size":
+                self.size = kwargs.get("size")
+            if i == "x":
+                self.x = kwargs.get("x")
+            if i == "y":
+                self.y = kwargs.get("y")
