@@ -42,6 +42,7 @@ class Base:
 
     def from_json_string(json_string):
         """loads module converts from json to dictionery"""
-        if json_string is None:
-            json_string = []
-        return json.loads(json_string)
+        loads = []
+        if json_string:
+            loads = json.loads(json_string)
+        return loads
