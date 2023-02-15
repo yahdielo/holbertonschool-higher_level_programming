@@ -18,6 +18,6 @@ class Square(Rectangle):
 
     def __str__(self):
         """using parent methods"""
-        var = "[Rectangle]"
+        var = "[Square]"
         var1 = (f"({id}) {self.__x}/{self.__y}")
         return (f"{var} {var1} - {self.__size}")
