@@ -27,3 +27,12 @@ class Base:
         if list_dictionaries is None:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    def save_to_file(cls, list_objs):
+        """comment"""
+        filename = f"{cls.__name__}.json"
+        with open({filename}, "w") as f:
+            new_list = []
+            for i in list_objs:
+                new_list.append(i)
+        return f.write(new_list)
