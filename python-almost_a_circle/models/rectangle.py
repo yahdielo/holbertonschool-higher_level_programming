@@ -36,7 +36,7 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """This methods allows user to update class methods with args"""
         if args:
-            for lenght in len(args):
+            for lenght in range(len(args)):
                 if lenght == 0:
                     self.id = args[0]
                 if lenght == 1:
@@ -48,17 +48,17 @@ class Rectangle(Base):
                 if lenght == 4:
                     self.__y = args[4]
 
-        for i in len(kwargs):
-            if i == 0:
-                self.id = kwargs[i]
-            if i == 1:
-                self.__width = kwargs[i]
-            if i == 2:
-                self.__height = kwargs[i]
-            if i == 3:
-                self.__x = kwargs[i]
-            if i == 4:
-                self.__y = kwargs[i]
+        for i in kwargs:
+            if i == "id":
+                self.id = kwargs.get("id")
+            if i == "width":
+                self.__width = kwargs.get("width")
+            if i == "height":
+                self.__height = kwargs.get("height")
+            if i == "x":
+                self.__x = kwargs.get("x")
+            if i == "y":
+                self.__y = kwargs.get("y")
 
     def __str__(self):
         var = "[Rectangle]"
