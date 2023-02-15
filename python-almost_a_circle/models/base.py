@@ -5,6 +5,7 @@ with this argument value
  - you can assume id is an integer and you don’t need to test
 the type of it
  """
+ import json
 
 
 class Base:
@@ -19,3 +20,8 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+
+    def to_json_string(list_dictionaries):
+        if list_dictionaries is None:
+            return "[]"
+        return json.dumps(list_dictionaries)
