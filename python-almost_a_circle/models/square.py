@@ -11,13 +11,9 @@ class Square(Rectangle):
     """
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
-        self.__x = x
-        self.__y = y
-        self.__id = id
-        self.__size = size
 
     def __str__(self):
         """using parent methods"""
         var = "[Square]"
-        var1 = (f"({id}) {self.__x}/{self.__y}")
-        return (f"{var} {var1} - {self.__size}")
+        var1 = (f"({self.id}) {self.x}/{self.y}")
+        return (f"{var} {var1} - {self.width}")
