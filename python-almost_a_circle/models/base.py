@@ -32,8 +32,8 @@ class Base:
     def save_to_file(cls, list_objs):
         """comment"""
         filename = f"{cls.__name__}.json"
-        with open({filename}, "w") as f:
+        with open(filename, "w") as f:
             new_list = []
             for i in list_objs:
-                new_list.append(i)
-        return f.write(new_list)
+                new_list.append(i.to_dictionary())
+            f.write(cls.to_json_string(new_list))
