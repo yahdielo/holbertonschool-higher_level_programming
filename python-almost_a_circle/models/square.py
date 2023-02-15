@@ -11,27 +11,17 @@ class Square(Rectangle):
     """
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
+    
+    @property
+    def size(self):
+        return super().width
+
+    @size.setter
+    def size(self, value):
+        super(__class__, self.__class__).width.__set__(self, value)
 
     def __str__(self):
         """using parent methods"""
         var = "[Square]"
         var1 = (f"({self.id}) {self.x}/{self.y}")
         return (f"{var} {var1} - {self.width}")
-
-    @property
-    def width(self):
-        return self.width
-
-    @width.setter
-    def width(self, value):
-        self.width = value
-        return self.width
-
-    @property
-    def height(self):
-        return self.height
-
-    @height.setter
-    def height(self, value):
-        self.height = value
-        return self.height
