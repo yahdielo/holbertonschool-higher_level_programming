@@ -47,3 +47,13 @@ class Square(Rectangle):
                 self.x = kwargs.get("x")
             if i == "y":
                 self.y = kwargs.get("y")
+
+    def to_dictionary(self):
+        """this module returns class methods as dictionary"""
+        _dict = {
+            "id": self.id,
+            "size": self.width,
+            "x": self.x,
+            "y": self.y
+            }
+        return _dict
