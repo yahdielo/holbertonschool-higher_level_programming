@@ -134,4 +134,5 @@ class Rectangle(Base):
             self.__y = value
 
     def to_dictionary(self):
-            return {"id" : self.id, "width": self.__width, "height": self.__height, "x": self.__x, "y": self.__y}
+        """this module returns class methods as dictionary"""
+        return {"id" : self.id, "width": self.__width, "height": self.__height, "x": self.__x, "y": self.__y}
