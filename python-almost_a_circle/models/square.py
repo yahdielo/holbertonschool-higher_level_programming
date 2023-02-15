@@ -17,3 +17,21 @@ class Square(Rectangle):
         var = "[Square]"
         var1 = (f"({self.id}) {self.x}/{self.y}")
         return (f"{var} {var1} - {self.width}")
+
+    @property
+    def width(self):
+        return self.width
+
+    @width.setter
+    def width(self, value):
+        self.width = value
+        return self.width
+
+    @property
+    def height(self):
+        return self.height
+
+    @height.setter
+    def height(self, value):
+        self.height = value
+        return self.height
