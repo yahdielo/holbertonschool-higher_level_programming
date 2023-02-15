@@ -27,6 +27,7 @@ class Square(Rectangle):
         return (f"{var} {var1} - {self.width}")
 
     def update(self, *args, **kwargs):
+        """comment"""
         if args:
             for i in range(len(args)):
                 if i == 0:
