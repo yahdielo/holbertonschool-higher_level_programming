@@ -6,7 +6,7 @@ with this argument value
 the type of it
  """
 import json
-
+from os import path
 
 class Base:
     '''class atribute'''
@@ -61,7 +61,7 @@ class Base:
     def load_from_file(cls):
         filename = f"{cls.__name__}.json"
         listone = []
-        if filename:
+        if path.exists(filename):
             with open(filename, "r") as f:
                 listtwo = cls.from_json_string(f.read())
                 for i in listtwo:
