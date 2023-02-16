@@ -40,7 +40,7 @@ class Base:
                     new_list.append(i.to_dictionary())
             f.write(cls.to_json_string(new_list))
 
-    @classmethod
+    @staticmethod
     def from_json_string(json_string):
         """loads module converts from json to dictionery"""
         loads = []
@@ -56,3 +56,15 @@ class Base:
             _instance = cls(2, 2)
         cls.update(_instance, **dictionary)
         return _instance
+
+    @classmethod
+    def load_from_file(cls):
+        filename = f"{cls.__name__}.json"
+        listone = []
+
+        if cls:
+            with open(filename, "r") as f:
+                listtwo = cls.from_json_string(f.read())
+                for i in listtwo:
+                    listone.append(cls.create(**i))
+        return listone
