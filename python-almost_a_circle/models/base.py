@@ -8,6 +8,7 @@ the type of it
 import json
 from os import path
 
+
 class Base:
     '''class atribute'''
     __nb_objects = 0
