@@ -61,8 +61,7 @@ class Base:
     def load_from_file(cls):
         filename = f"{cls.__name__}.json"
         listone = []
-
-        if cls:
+        if filename:
             with open(filename, "r") as f:
                 listtwo = cls.from_json_string(f.read())
                 for i in listtwo:
