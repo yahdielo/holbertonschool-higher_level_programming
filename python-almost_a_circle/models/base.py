@@ -40,9 +40,19 @@ class Base:
                     new_list.append(i.to_dictionary())
             f.write(cls.to_json_string(new_list))
 
+    @classmethod
     def from_json_string(json_string):
         """loads module converts from json to dictionery"""
         loads = []
         if json_string:
             loads = json.loads(json_string)
         return loads
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ == "Square":
+            _instance = cls(2)
+        elif cls.__name__ == "Rectangle":
+            _instance = cls(2, 2)
+        cls.update(_instance, **dictionary)
+        return _instance
