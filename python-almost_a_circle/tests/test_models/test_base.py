@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """Unittest for Base class"""
 
+import json
+import os
 import unittest
+
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
-import json
-import os
 
 
 class TestBase(unittest.TestCase):

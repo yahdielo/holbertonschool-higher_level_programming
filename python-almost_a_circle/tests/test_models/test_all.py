@@ -1,10 +1,14 @@
+#!/usr/bin/python3
+"""Unittest for Square class"""
+
+
 import io
 import unittest
 import unittest.mock
 
+from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
-from models.base import Base
 
 
 class Test_all(unittest.TestCase):
@@ -39,7 +43,7 @@ class Test_all(unittest.TestCase):
             rectangle = Rectangle(0 ,0)
         with self.assertRaises(ValueError):
             square = Square(0 ,0)
-     def test_string_width(self):
+    def test_string_width(self):
         with self.assertRaises(TypeError):
             rec = Rectangle("2", 10)
 
@@ -166,3 +170,6 @@ class Test_all(unittest.TestCase):
         Base.Rectangle.save_to_file(None)
         with open("Rectangle.json") as file:
             self.assertEqual('[]', file.read())
+
+if __name__ == '__main__':
+    unittest.main()
