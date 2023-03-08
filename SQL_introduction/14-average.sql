@@ -1,2 +1,2 @@
 -- find average score of table
-SELECT AVERAGE(score) FROM second_table;
+SELECT AVG(score) FROM second_table;
