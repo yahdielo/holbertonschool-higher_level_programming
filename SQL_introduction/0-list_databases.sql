@@ -1,1 +1,1 @@
-mysql> SHOW DATABASES;
+^--SHOW DATABASES;
