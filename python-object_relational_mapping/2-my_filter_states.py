@@ -16,7 +16,7 @@ def matching_arg(argv):
     cur = conn.cursor()
 
     # sql command to execute
-    str1 = "SELECT * FROM  states WHERE NAME = '{arg_name}'"
+    str1 = "SELECT * FROM  states WHERE NAME LIKE BINARY '{arg_name}'"
     cur.execute(str1.format(arg_name=sys.argv[4]))
 
     query_rows = cur.fetchall()
