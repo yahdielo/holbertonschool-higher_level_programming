@@ -19,7 +19,7 @@ def matching_arg(argv):
 
     db=sys.argv[3]
     # sql command to execute
-    str1 = f"SELECT cities.id, cities.name, states.name FROM  cities, INNER JOIN states ON cities.state_id = states.id"
+    str1 = f"SELECT cities.id, cities.name, states.name FROM  cities, INNER JOIN cities ON cities.state_id = states.id"
     cur.execute(str1)
 
     query_rows = cur.fetchall()
