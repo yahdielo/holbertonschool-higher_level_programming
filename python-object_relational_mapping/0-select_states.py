@@ -5,7 +5,6 @@ import sys
 import MySQLdb
 
 
-
 def states(argv):
     '''Function that connect and fetch data'''
     
@@ -20,5 +19,7 @@ def states(argv):
         print(row)
     cur.close()
     conn.close()
-states(sys)
+
+if __name__ == "__main__":
+    states(sys)
 
