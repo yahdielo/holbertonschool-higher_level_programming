@@ -7,9 +7,9 @@ import MySQLdb
 
 
 def matching_arg(argv):
-    """ 
+    """
     This module quierys a name matching argmunet index 4,
-    write one that is safe from MySQL injections! 
+    write one that is safe from MySQL injections!
     """
 
     conn = MySQLdb.connect(host="localhost",
