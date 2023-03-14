@@ -1,17 +1,24 @@
 #!/usr/bin/python3
+import sys
+
 import MySQLdb
 
-""" This module is documentes"""
 
-conn = MySQLdb.connect(host = "localhost", port = 3306, user = "root", passwd = "root", db = "hbtn_0e_0_usa")
+def states(argv):
 
-cur = conn.cursor()
 
-cur.execute("SELECT * FROM states ORDER BY id ASC")
+    conn = MySQLdb.connect(host = "localhost", port = 3306, user = argv[1], passwd = argv[2], db = argv[3])
+    cur = conn.cursor()
 
-query_rows = cur.fetchall()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
 
-for row in query_rows:
-    print(row)
-cur.close()
-conn.close()
+    query_rows = cur.fetchall()
+
+    for row in query_rows:
+        print(row)
+    cur.close()
+    conn.close()
+
+if __name__ == "__main__":
+    states(sys)
+
