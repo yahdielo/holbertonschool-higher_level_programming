@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' This module is documented yes sir!'''
+'''This module is documented yes sir!'''
 import sys
 
 import MySQLdb
