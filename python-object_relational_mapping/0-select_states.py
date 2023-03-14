@@ -6,7 +6,7 @@ import MySQLdb
 
 
 def states(argv):
-    '''Function that connect and fetch data'''
+    ''' This module is documented'''
 
     conn = MySQLdb.connect(host="localhost",
                                 port=3306, user=sys.argv[1],
