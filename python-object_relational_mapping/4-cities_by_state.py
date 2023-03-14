@@ -17,10 +17,12 @@ def matching_arg(argv):
 
     cur = conn.cursor()
 
-    db=sys.argv[3]
+    db = sys.argv[3]
     # sql command to execute
-    str1 = f"SELECT cities.id, cities.name, states.name FROM  cities INNER JOIN states ON cities.state_id = states.id"
-    cur.execute(str1)
+    str1 = "SELECT cities.id, cities.name, states.name FROM "
+    str2 = " cities INNER JOIN states ON cities.state_id = states.id"
+    full_str = str1 + str2
+    cur.execute(full_str)
 
     query_rows = cur.fetchall()
 
