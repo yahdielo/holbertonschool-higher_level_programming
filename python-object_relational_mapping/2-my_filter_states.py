@@ -12,12 +12,12 @@ def matching_arg(argv):
     conn = MySQLdb.connect(host="localhost",
                                 port=3306, user=sys.argv[1],
                                 passwd=sys.argv[2], db=sys.argv[3])
-    arg_name = sys.argv[4]
 
     cur = conn.cursor()
 
     # sql command to execute
-    cur.execute(f"SELECT * FROM  states WHERE NAME = '{arg_name}'")
+    str1 = "SELECT * FROM  states WHERE NAME = '{arg_name}'"
+    cur.execute(str1.format(arg_name = sys.argv[4]))
 
     query_rows = cur.fetchall()
 
