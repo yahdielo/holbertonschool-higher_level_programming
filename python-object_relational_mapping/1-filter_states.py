@@ -16,7 +16,9 @@ def start_letter(argv):
     cur = conn.cursor()
 
     # sql command to execute
-    cur.execute("SELECT * FROM  states WHERE NAME LIKE  BINARY 'N%' ORDER BY states.id ASC")
+    var1 = "SELECT * FROM  states WHERE NAME"
+    var2 = "LIKE  BINARY 'N%' ORDER BY states.id ASC"
+    cur.execute(f"{var1} {var2}")
 
     query_rows = cur.fetchall()
 
