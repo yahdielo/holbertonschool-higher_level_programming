@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-
-"""Start link class to table in database
+"""
+    Start link class to table in database
 """
 import sys
 
@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
 
 class State(Base):
-    """ State class inherits from Base and is linked to mysqlalchemy """
+    """Class that defines all common
+    attributes/methods for other classes"""
 
     __tablename__ = 'states'
     id = Column(integer, primarykey=True)
