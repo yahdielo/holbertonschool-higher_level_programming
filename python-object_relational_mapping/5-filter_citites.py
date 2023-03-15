@@ -19,13 +19,21 @@ def matching_arg(argv):
 
     state = sys.argv[4]
     # sql command to execute
-    str1 = "SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id WHERE state.id = state_id "
-    cur.execute(str1)
+    str1 = "SELECT cities.name  FROM cities INNER JOIN states "
+    str2 = f"ON cities.state_id = states.id WHERE states.name = '{state}'"
+    cur.execute(str1+str2)
 
     query_rows = cur.fetchall()
+    lenght = len(query_rows)
+    index = 1
 
-    for row in query_rows:
-        print(row)
+    for item in query_rows:
+    
+        print(item[0], end="")
+        if index < lenght:
+            print(", ", end="")
+        index += 1
+    print()
     cur.close()
     conn.close()
 
