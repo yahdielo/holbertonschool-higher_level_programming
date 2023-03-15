@@ -15,16 +15,16 @@ if __name__ == "__main__":
 
     session = sessionmaker(engine)
     session = session()
-    object = State(id = 6, name = 'Louisiana')
-    session.add(object)
+    states = session.query(State).all()
+    lenght = len(states)
+
+    new_state = State(id=lenght + 1, name='Louisiana')
+    session.add(new_state)
     session.commit()
 
-    states = session.query(State).filter(State.name == 'Lousiana')
+    result = session.query(State).filter(State.name == 'Louisiana')
 
-    if states is not None:
-        for items in states:
-            if states:
-                print("{}".format(items.id))
-    else:
-        print("Not found")
+    for item in result:
+        print("{}".format(item.id))
+
     session.close()
