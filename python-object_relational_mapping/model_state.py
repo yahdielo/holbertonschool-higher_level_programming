@@ -1,17 +1,12 @@
 #!/usr/bin/python3
-""" Start link class to table in database """
+'''Module provide a class that map to State table'''
+# Module for Connecting To MySQL database
 import sys
 
 from sqlalchemy import Column, Integer, String, create_engine
+from sqlalchemy.ext.declarative import declarative_base
 
-from model_state import Base, State
-
-if __name__ == "__main__":
-    str1 = 'mysql+mysqldb://{}:{}@localhost/{}'
-    engine = create_engine({str1}.format(sys.argv[1],
-                                         sys.argv[2],
-                                         sys.argv[3]), pool_pre_ping=True)
-    Base.metadata.create_all(engine)
+Base = declarative_base()
 
 
 class State(Base):
