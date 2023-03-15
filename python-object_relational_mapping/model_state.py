@@ -17,8 +17,7 @@ if __name__ == "__main__":
 
 
 class State(Base):
-    """ Module  State inherit from Base """
-
+    '''Class mapping table Sate'''
     __tablename__ = 'states'
-    id = Column(integer, primarykey=True)
+    id = Column(Integer, primary_key=True)
     name = Column(String(128))
