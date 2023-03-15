@@ -17,8 +17,7 @@ if __name__ == "__main__":
 
 
 class State(Base):
-    """Class that defines all common
-    attributes/methods for other classes"""
+    """ classinherits from base linked to base table """
 
     __tablename__ = 'states'
     id = Column(integer, primarykey=True)
