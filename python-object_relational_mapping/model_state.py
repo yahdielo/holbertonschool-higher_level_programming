@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
 class State(Base):
     """ Module is documented """
+
     __tablename__ = 'states'
     id = Column(integer, primarykey=True)
     name = Column(String(128))
