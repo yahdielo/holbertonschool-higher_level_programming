@@ -17,7 +17,7 @@ if __name__ == "__main__":
 
 
 class State(Base):
-    """ Module is documented """
+    """ Module  State inherit from Base """
 
     __tablename__ = 'states'
     id = Column(integer, primarykey=True)
