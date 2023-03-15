@@ -28,7 +28,7 @@ def matching_arg(argv):
     index = 1
 
     for item in query_rows:
-    
+
         print(item[0], end="")
         if index < lenght:
             print(", ", end="")
