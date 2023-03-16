@@ -15,7 +15,7 @@ if __name__ == "__main__":
     arg_state = sys.argv[4]
     session = sessionmaker(engine)
     session = session()
-    states = session.query(State).filter(State.name.like(f'{arg_state}%'))
+    states = session.query(State).filter(State.name.like(f'{arg_state}%')).scalar()
     for items in states:
         if states:
             print("{}".format(items.id))
