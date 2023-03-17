@@ -15,10 +15,10 @@ if __name__ == "__main__":
     arg_state = sys.argv[4]
     session = sessionmaker(engine)
     session = session()
-    states = session.query(State).filter(State.name.like(f'{arg_state}%')).scalar()
-    for items in states:
-        if states:
-            print("{}".format(items.id))
-        else:
-            print("Not found")
+    states = session.query(State).filter(State.name.like(arg_state)).scalar()
+   
+    if states:
+        print("{}".format(items.id))
+    else:
+        print("Not found")
     session.close()
