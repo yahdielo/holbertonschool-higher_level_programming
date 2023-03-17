@@ -16,7 +16,7 @@ if __name__ == "__main__":
     session = sessionmaker(engine)
     session = session()
     states = session.query(State).filter(State.name.like(arg_state)).scalar()
-   
+
     if states:
         print("{}".format(states.id))
     else:
