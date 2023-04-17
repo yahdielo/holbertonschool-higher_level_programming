@@ -3,7 +3,9 @@
 const process = require('process');
 const variable = process.argv
 
-if (variable.length >= 3)
+if (variable.length > 3)
+    console.log('Arguments found')
+if (variable.length == 3)
     console.log('Argument found')
-else
+if (variable.length < 3)
     console.log('No arguements')
