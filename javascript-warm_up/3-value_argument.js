@@ -3,7 +3,7 @@
 const process = require('process');
 const variable = process.argv
 
-i = 0
+var i = 0
 
 for (i in variable)
 
