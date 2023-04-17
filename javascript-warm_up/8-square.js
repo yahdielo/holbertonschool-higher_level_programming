@@ -8,6 +8,7 @@ for (let i = 0; i < variable[2]; i++) {
   for (let j = 0; j < variable[2]; j++) {
     square += 'x';
   }
-  square += '\n';
+  if (i < variable[2] - 1)
+    square += '\n';
 }
 console.log(square);
