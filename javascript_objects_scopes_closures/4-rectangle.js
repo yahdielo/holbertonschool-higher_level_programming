@@ -20,31 +20,16 @@ class Rectangle {
     }
     console.log(square);
   }
-
-  // method to rotate rectangle
-  rotate () {
-    const new_h = this.height;
-    const new_w = this.width;
-    this.width = new_h;
-    this.height = new_w;
-    let square = '';
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) { square += 'X'; }
-      if (i < this.height - 1) { square += '\n'; }
-    }
-    console.log(square);
-  }
-
   // method to dobke the size of rectangle
   double () {
-    this.width = this.width * 2;
     this.height = this.height * 2;
-    let square = '';
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) { square += 'X'; }
-      if (i < this.height - 1) { square += '\n'; }
-    }
-    console.log(square);
+    this.width = this.width * 2;
+  }
+
+  rotate () {
+    let temp = this.height;
+    this.height = this.width;
+    this.width = temp;
   }
 }
 module.exports = Rectangle;
