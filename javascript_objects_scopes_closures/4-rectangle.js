@@ -20,6 +20,7 @@ class Rectangle {
     }
     console.log(square);
   }
+
   // method to dobke the size of rectangle
   double () {
     this.height = this.height * 2;
@@ -27,7 +28,7 @@ class Rectangle {
   }
 
   rotate () {
-    let temp = this.height;
+    const temp = this.height;
     this.height = this.width;
     this.width = temp;
   }
