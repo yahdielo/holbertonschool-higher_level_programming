@@ -14,7 +14,7 @@ class Rectangle {
   print () {
     let square = '';
     for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) { square += 'x'; }
+      for (let j = 0; j < this.width; j++) { square += 'X'; }
       if (i < this.height - 1) { square += '\n'; }
     }
     console.log(square);
