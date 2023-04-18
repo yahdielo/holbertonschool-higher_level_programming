@@ -12,10 +12,10 @@ class Rectangle {
   }
 
   print () {
-    let square = {};
-    for (let i = 0; i < this.width; i++) {
-      for (let j = 0; j < this.height; j++) { square += 'x'; }
-      if (i < this.width - 1) { square += '\n'; }
+    let square = '';
+    for (let i = 0; i < this.height; i++) {
+      for (let j = 0; j < this.width; j++) { square += 'x'; }
+      if (i < this.width) { square += '\n'; }
     }
     console.log(square);
   }
