@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-var argument = process.argv;
+let argument = process.argv;
 
 const fs = require('fs')
 fs.readFile(argument[2], (err, inputD) => {
