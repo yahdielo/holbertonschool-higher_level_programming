@@ -1,17 +1,13 @@
 #!/usr/bin/node
 
-const argument = process.argv
-
-let url = argument[2];
-
-async function request() {
-try {
-    const response = await fetch(url);
-
-    console.log('response.status: ', response.status);
-    } catch (err) {
-        console.log(err);
-    }
-}
-
-request();
+const request = require('request')
+ 
+// Request URL
+let url = process.argv;
+request(url[2], (error, response, body) => {
+    // Printing the error if occurred
+    if (error) console.log(error)
+ 
+    // Printing status code
+    console.log('code:',response.statusCode);
+});
