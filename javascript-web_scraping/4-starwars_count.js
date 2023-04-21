@@ -13,11 +13,11 @@ request(url, (error, response, body) => {
   let count = 0;
 
   // iterate inside the list contining objects
-  for (let item of object.results) {
+  for (const item of object.results) {
     const _list = item.characters;
 
     // iterate inside objects
-    for (let _string of _list) {
+    for (const _string of _list) {
       if (_string.includes(18)) {
         count += 1;
       }
