@@ -11,5 +11,5 @@ $(document).ready( function() {
             $('header').toggleClass(class_name);
             $('header').addClass('green')
         }
-    })
-})
+    });
+});
